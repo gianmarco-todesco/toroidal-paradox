@@ -33,8 +33,18 @@ p {
 }
 
 #render-canvas {
-    width:700px;
-    height:700px;    
+    width:650px;
+    height:650px;    
     border:solid 1px black;
     touch-action:"none";
+}
+
+#controls input {
+    width:650px;
+}
+
+.credits {
+    font-style: italic;
+    color:#335577;
+    font-size:14px;
 }

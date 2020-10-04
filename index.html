@@ -8,9 +8,10 @@
     <meta name="description" content="An animation showing the solution of a Martin Gardner's puzzle">
     <meta name="author" content="gian marco todesco">
     <link rel="stylesheet" href="style.css">
-    <script src="https://preview.babylonjs.com/babylon.js"></script>
     <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <script src="https://preview.babylonjs.com/babylon.js"></script>
     <script src="polyhedron.js"></script>
+    <script src="viewer.js"></script>
     <script src="main.js"></script>
 
 </head>
@@ -47,14 +48,26 @@ parts.
 </p>
 <p>
     SPOILER ALERT: The animation below shows how to perform the trick.
-    Move the top cursor from left to right to transform the surfaces; click&drag 
-    the image to rotate the models.
 </p>
+<ul>
+    <li>Move the top cursor from left to right to transform the surfaces;</li>
+    <li>Click & drag the image to rotate the models. </li>
+    <li>Shift + Click & drag the image to translate the models. </li>
+    <li>Mouse wheel to zoomin/zoomout </li>
+    
+    <li>Change the quality according to the performances of your computer:
+    <select id="quality" onchange="setQuality(this.value);" >
+        <option value="1">Low quality</option>
+        <option value="2" selected>Medium quality</option>
+        <option value="3">High quality</option>
+    </select></li>
+</ul>
 
 <div id="controls">
     <input type="range" name="rangeInput" min="0" max="100" value="0" oninput="showVal(this.value)">
 </div>
 <canvas id="render-canvas"></canvas>
 
+<div class="credits">by <a href="https://github.com/gianmarco-todesco">gmt</a>, oct2020</div>
 </body>
 </html>
