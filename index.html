@@ -1,0 +1,60 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>A Toroidal Paradox</title>
+    <meta name="description" content="An animation showing the solution of a Martin Gardner's puzzle">
+    <meta name="author" content="gian marco todesco">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://preview.babylonjs.com/babylon.js"></script>
+    <script src="https://code.jquery.com/pep/0.4.3/pep.js"></script>
+    <script src="polyhedron.js"></script>
+    <script src="main.js"></script>
+
+</head>
+<body>
+<h1>
+A Toroidal Paradox
+</h1>
+<p>
+In a beautiful puzzle, Martin Gardner considered the two linked surfaces shown 
+below in the <i>figure 1</i>. The surfaces can be stretched or shrunk in any
+desidered way, provided there is no tearing or sticking together of separate 
+parts.
+</p>
+<p>
+    Can the two-hole torus be deformed so that one hole becomes unlinked as is 
+    shown in <i>figure 2</i>?
+</p>
+<div class="figures">
+    <figure class="image">
+        <img src="fig1.png" alt="fig1">
+        <figcaption>Fig.1</figcaption>
+    </figure>
+    <span> &harr; </span>
+    <figure class="image">
+        <img src="fig2.png" alt="fig1">
+        <figcaption>Fig.2</figcaption>
+    </figure>
+</div>
+
+<p class="citation">
+    (see: Gardner, Martin. <i>The last recreations: hydras, eggs, and other 
+        mathematical mystifications.</i> Springer Science & Business Media, 2007;
+        336-337)
+</p>
+<p>
+    SPOILER ALERT: The animation below shows how to perform the trick.
+    Move the top cursor from left to right to transform the surfaces; click&drag 
+    the image to rotate the models.
+</p>
+
+<div id="controls">
+    <input type="range" name="rangeInput" min="0" max="100" value="0" oninput="showVal(this.value)">
+</div>
+<canvas id="render-canvas"></canvas>
+
+</body>
+</html>
